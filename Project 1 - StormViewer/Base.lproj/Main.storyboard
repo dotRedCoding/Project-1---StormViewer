@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="SnE-RJ-CiG" style="IBUITableViewCellStyleDefault" id="tvN-tc-cAT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" textLabel="SnE-RJ-CiG" style="IBUITableViewCellStyleDefault" id="tvN-tc-cAT">
                                 <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tvN-tc-cAT" id="OrE-Ek-WV0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SnE-RJ-CiG">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="355.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -54,17 +54,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="meg-VU-aee">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="meg-VU-aee">
+                                <rect key="frame" x="0.0" y="60" width="414" height="836"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pvF-yV-5a5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="meg-VU-aee" firstAttribute="centerY" secondItem="CeL-kj-ODd" secondAttribute="centerY" id="6Ic-P8-K4L"/>
-                            <constraint firstItem="meg-VU-aee" firstAttribute="centerX" secondItem="CeL-kj-ODd" secondAttribute="centerX" id="awJ-27-vPB"/>
-                            <constraint firstItem="meg-VU-aee" firstAttribute="leading" secondItem="pvF-yV-5a5" secondAttribute="leading" id="eym-xJ-U3M"/>
-                            <constraint firstItem="meg-VU-aee" firstAttribute="top" secondItem="CeL-kj-ODd" secondAttribute="topMargin" constant="-48" id="nzk-dt-kh6"/>
+                            <constraint firstItem="meg-VU-aee" firstAttribute="top" secondItem="pvF-yV-5a5" secondAttribute="top" constant="12" id="C1B-3K-g9b"/>
+                            <constraint firstItem="meg-VU-aee" firstAttribute="trailing" secondItem="pvF-yV-5a5" secondAttribute="trailing" id="LIe-s0-Q8r"/>
+                            <constraint firstAttribute="bottom" secondItem="meg-VU-aee" secondAttribute="bottom" id="eCg-sd-U5A"/>
+                            <constraint firstItem="meg-VU-aee" firstAttribute="leading" secondItem="pvF-yV-5a5" secondAttribute="leading" id="oIa-a5-gx7"/>
                         </constraints>
                     </view>
                     <connections>

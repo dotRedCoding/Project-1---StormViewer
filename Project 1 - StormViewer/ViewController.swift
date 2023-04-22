@@ -15,6 +15,9 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Storm Viewer"
+        navigationController?.navigationBar.prefersLargeTitles = true // if set here all screens will have this setting (inheritance)
+        
         let fm = FileManager.default // built in system type for the File System
         let path = Bundle.main.resourcePath! // Bundle is a directory of our compiled program and all our assets
         let items = try! fm.contentsOfDirectory(atPath: path) // set the contents of the new constant to the pointed path (the one above where the assests are)

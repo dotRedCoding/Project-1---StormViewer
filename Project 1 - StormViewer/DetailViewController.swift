@@ -17,6 +17,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = selectedImage
+        navigationItem.largeTitleDisplayMode = .never // we dont want large titles on this screen through inheritance
+        
         if let imageToLoad = selectedImage { // checks to see if the there is an image
             imageView.image = UIImage(named: imageToLoad)
         }
