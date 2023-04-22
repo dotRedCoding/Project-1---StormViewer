@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    // MARK: - PROPERTY
+    // MARK: - Properties
     var pictures = [String]()
     
     // MARK: - viewDidLoad
@@ -28,7 +28,7 @@ class ViewController: UITableViewController {
         print(pictures)
     } // End of viewDidLoad
 
-    // MARK: - TableView Methods
+    // MARK: - TableViewDataSource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
@@ -41,6 +41,13 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // needs to be type cast as DetailViewController so we dont get a regular viewController
+        if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
+            vc.selectedImage = pictures[indexPath.row] // sets the property to selection at the current row
+            navigationController?.pushViewController(vc, animated: true) // shows the screen
+        }
+    }
     
     
 
