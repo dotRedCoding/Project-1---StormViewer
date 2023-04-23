@@ -12,12 +12,14 @@ class DetailViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet var imageView: UIImageView!
     var selectedImage: String?
+    var selectedPictureNumber: Int?
+    var totalPictures: Int?
     
     // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedImage
+        title = "\(selectedPictureNumber!) of \(totalPictures!)"
         navigationItem.largeTitleDisplayMode = .never // we dont want large titles on this screen through inheritance
         
         if let imageToLoad = selectedImage { // checks to see if the there is an image
@@ -36,5 +38,5 @@ class DetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
-
+    
 } // End of DetailViewController
